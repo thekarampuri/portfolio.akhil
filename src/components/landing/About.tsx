@@ -13,7 +13,7 @@ export default function About() {
       {/* About me */}
       <div className="mt-8 flex flex-col gap-4 md:flex-row">
         <Image
-          src="/assets/logo.png"
+          src="/assets/logo.jpeg"
           alt="About"
           width={100}
           height={100}
@@ -27,7 +27,7 @@ export default function About() {
             {mySkills.map((skill) => (
               <Tooltip key={skill.key}>
                 <TooltipTrigger asChild>
-                   <div className="mt-4 size-6 hover:cursor-pointer">{skill}</div>
+                  <div className="mt-4 size-6 hover:cursor-pointer">{skill}</div>
                 </TooltipTrigger>
                 <TooltipContent>{skill.key}</TooltipContent>
               </Tooltip>

@@ -234,10 +234,10 @@ const ChatBubble: React.FC = () => {
         prev.map((msg) =>
           msg.id === botMessageId
             ? {
-                ...msg,
-                text: "I'm sorry, I'm having trouble responding right now. Please try again later.",
-                isStreaming: false,
-              }
+              ...msg,
+              text: "I'm sorry, I'm having trouble responding right now. Please try again later.",
+              isStreaming: false,
+            }
             : msg,
         ),
       );
@@ -257,7 +257,7 @@ const ChatBubble: React.FC = () => {
       <ExpandableChatHeader>
         <div className="flex items-center space-x-3">
           <Avatar className="h-8 w-8 rounded-full border border-gray-200 bg-blue-300 transition-all duration-300 ease-in-out hover:scale-90 dark:bg-[var(--logo-bg-dark)]">
-            <AvatarImage src="/assets/logo.png" alt="Assistant" />
+            <AvatarImage src="/assets/logo.jpeg" alt="Assistant" />
             <AvatarFallback>AI</AvatarFallback>
           </Avatar>
           <div>
@@ -290,7 +290,7 @@ const ChatBubble: React.FC = () => {
                 <div className="flex items-start space-x-2">
                   {message.sender === 'bot' && (
                     <Avatar className="h-6 w-6 rounded-full border border-gray-200 bg-blue-300 transition-all duration-300 ease-in-out dark:bg-[var(--logo-bg-dark)]">
-                      <AvatarImage src="/assets/logo.png" alt="Assistant" />
+                      <AvatarImage src="/assets/logo.jpeg" alt="Assistant" />
                       <AvatarFallback>AI</AvatarFallback>
                     </Avatar>
                   )}

@@ -56,7 +56,7 @@ export const heroConfig = {
   // Personal Information
   name: 'Akhil Karampuri',
   title: 'Full Stack Developer',
-  avatar: '/assets/logo.png',
+  avatar: '/assets/logo.jpeg',
 
   // Skills Configuration
   skills: [
